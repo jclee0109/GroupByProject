@@ -16,9 +16,11 @@
         </form>
 
         {% if hello_world_output %}
-        <h1>
-            {{hello_world_output.text}}
-        </h1>
+            {% for hello_world in hello_world_output %}
+            <h1>
+                {{hello_world.text}}
+            </h1>
+            {% endfor %}
         {% endif %}
     </div>
 
