@@ -3,6 +3,7 @@
 {% block content %}
   <div>
     <div style="text-align: center; max-width: 500px; margin:4rem auto">
+      <h4>Detail</h4>
       <p>
         {{ target_user.date_joined }}
       </p>
@@ -16,8 +17,12 @@
           Change Info
         </p>
       </a>
+      <a href="{% url 'accountapp:delete' pk=user.pk %}">
+        <p>
+          Quit
+        </p>
+      </a>
       {% endif %}
-
     </div>
   </div>
 {% endblock %}

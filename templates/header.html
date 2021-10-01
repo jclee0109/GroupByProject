@@ -17,6 +17,9 @@
         <a href="{% url 'accountapp:logout' %}?next={{ request.path }}">
             <span>logout</span>
         </a>
+        <div>
+            {{ user.username }} 님 안녕하세요.
+        </div>
         {% endif %}
     </div>
 
