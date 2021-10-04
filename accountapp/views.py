@@ -27,7 +27,7 @@ def hello_world(request):
         new_hello_world.text = temp
         new_hello_world.save()
 
-        return HttpResponseRedirect(reverse('accountapp:hello_world'))
+        return HttpResponseRedirect(reverse('profileapp'))
     else:
         hello_world_list = HelloWorld.objects.all()
         return render(request, 'accountapp/hello_world.html', context={'hello_world_output': hello_world_list})
