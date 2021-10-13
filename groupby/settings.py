@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'articleapp',
     'commentapp',
     'projectapp',
+    'subscriptionapp',
     'rest_framework',
     'django.contrib.sites',
     'allauth',
